@@ -16,13 +16,13 @@ const subRegionSchema = new mongoose.Schema(
       type: Array,
     },
 
-    includedetails: {
+    packagebooking: {
       type: String,
       required: true,
       trim: true,
     },
 
-    excludedetails: {
+    nonpackagebooking: {
       type: String,
       required: true,
       trim: true,

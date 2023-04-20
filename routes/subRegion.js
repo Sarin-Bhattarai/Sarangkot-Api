@@ -56,8 +56,8 @@ router.post(
       title: req.body.title,
       description: req.body.description,
       image: req.files.map((item) => item.path),
-      includedetails: req.body.includedetails,
-      excludedetails: req.body.excludedetails,
+      packagebooking: req.body.packagebooking,
+      nonpackagebooking: req.body.nonpackagebooking,
     };
     const subRegions = new SubRegion(subRegionDetails);
     const result = await subRegions.save();
